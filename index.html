@@ -57,18 +57,9 @@
             urgentMessage: "⏰ Elxanın həyatı müalicənin davam etməsindən asılıdır - kritik vəziyyət",
             urgentMessageEnabled: true,  // true = göstər, false = gizlət
             
-            // --- SAYĞAC MƏLUMATLARI ---
-            targetAmount: 70000,        // 3 milyon TL = təxminən 70,000 USD
-            collectedAmount: 7500,      // Toplanmış məbləğ
-            currencySymbol: "$",        // Valyuta simvolu
-            
             // --- PSİXOLOJİ TRİGGERLƏR ---
             smallDonationText: "50 AZN belə fərq yaradır 💛",
             donationImpact: "Hər 100 AZN = 1 gün əlavə müalicə",
-            
-            // --- SAYĞAC RƏNGLƏRİ ---
-            progressBarColor: "#FF9800",
-            progressBarColorEnd: "#FF9800",
             
             // --- ƏSAS MƏTNLƏR ---
             mainTitle: "Elxan cəmi 9 yaşındadır.<br>Ağır xəstəliklə mübarizə aparır.",
@@ -320,22 +311,6 @@
             letter-spacing: -0.3px;
         }
 
-        /* SAYĞAC */
-        .progress-section {
-            background: linear-gradient(135deg, #fff9f0 0%, #ffe8d6 100%);
-            padding: 1.5rem;
-            border-radius: 12px;
-            margin: 1.5rem auto;
-            box-shadow: 0 8px 30px var(--shadow);
-            animation: slideUp 0.8s ease;
-            animation-delay: 0.1s;
-            animation-fill-mode: both;
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* ROTATE ANİMASİYASINI SİLDİK - Performans üçün */
-
         @keyframes slideUp {
             from {
                 opacity: 0;
@@ -356,105 +331,6 @@
             animation: none !important;
             opacity: 1 !important;
             transform: none !important;
-        }
-
-        .progress-header {
-            text-align: center;
-            margin-bottom: 1.2rem;
-            position: relative;
-            z-index: 1;
-        }
-
-        .progress-header h2 {
-            font-family: 'Crimson Pro', serif;
-            font-size: 1.3rem;
-            color: var(--text);
-            margin-bottom: 0.3rem;
-        }
-
-        .target-amount {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--accent);
-            margin: 0.5rem 0;
-        }
-
-        .progress-bar-container {
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 50px;
-            height: 35px;
-            overflow: hidden;
-            position: relative;
-            margin: 1rem 0;
-            box-shadow: inset 0 2px 6px rgba(0,0,0,0.1);
-            z-index: 1;
-        }
-
-        .progress-bar {
-            height: 100%;
-            border-radius: 50px;
-            transition: width 2s cubic-bezier(0.4, 0.0, 0.2, 1);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .progress-bar::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(90deg, 
-                transparent, 
-                rgba(255,255,255,0.5), 
-                transparent
-            );
-            animation: shimmer 2s infinite;
-        }
-
-        @keyframes shimmer {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
-        }
-
-        .progress-stats {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 0.8rem;
-            margin-top: 1rem;
-            position: relative;
-            z-index: 1;
-        }
-
-        .stat-box {
-            text-align: center;
-            background: white;
-            padding: 1rem 0.5rem;
-            border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
-        }
-
-        .stat-box:hover {
-            transform: translateY(-3px);
-        }
-
-        .stat-label {
-            font-size: 0.75rem;
-            color: var(--text-light);
-            margin-bottom: 0.3rem;
-        }
-
-        .stat-value {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--accent);
-        }
-
-        .stat-value.current {
-            color: #FF9800;
-            font-weight: 800;
         }
 
         /* AİLƏ SİTATI */
@@ -1212,22 +1088,6 @@
                 width: 100%;
             }
             
-            .progress-section {
-                padding: 1.2rem;
-            }
-            
-            .target-amount {
-                font-size: 1.6rem;
-            }
-            
-            .stat-value {
-                font-size: 1rem;
-            }
-            
-            .stat-label {
-                font-size: 0.7rem;
-            }
-
             .help-item {
                 padding: 1.5rem 1rem;
             }
@@ -1312,14 +1172,6 @@
                 padding: 0 0.8rem;
             }
             
-            .progress-stats {
-                gap: 0.5rem;
-            }
-            
-            .stat-box {
-                padding: 0.8rem 0.3rem;
-            }
-            
             .story, .donation-section, .why-help {
                 padding: 1.5rem 1rem;
             }
@@ -1358,34 +1210,8 @@
     </div>
 
     <div class="container">
-        <!-- SAYĞAC - YUXARIDA -->
-        <section class="progress-section" style="margin-top: 1rem;">
-            <div class="progress-header">
-                <h2>Hədəf məbləğ</h2>
-                <div class="target-amount" id="targetAmount"></div>
-            </div>
-            
-            <div class="progress-bar-container">
-                <div class="progress-bar" id="progressBar"></div>
-            </div>
-            
-            <div class="progress-stats">
-                <div class="stat-box">
-                    <div class="stat-label">Toplanıb</div>
-                    <div class="stat-value current" id="collectedAmount"></div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-label">Qalıb</div>
-                    <div class="stat-value" id="remainingAmount"></div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-label">Faiz</div>
-                    <div class="stat-value" id="progressPercent"></div>
-                </div>
-            </div>
-        </section>
 
-        <!-- BANK HESABLARI - SAYĞACDAN SONRA -->
+        <!-- BANK HESABLARI -->
         <section class="donation-section">
             <h2 id="donationSectionTitle"></h2>
             <div id="bankAccountsContainer"></div>
@@ -1552,13 +1378,6 @@
             
             // Paylaşım
             document.getElementById('shareDescription').textContent = SITE_CONFIG.shareDescription;
-            
-            // Sayğac rəngi
-            const progressBar = document.getElementById('progressBar');
-            progressBar.style.background = `linear-gradient(90deg, ${SITE_CONFIG.progressBarColor}, ${SITE_CONFIG.progressBarColorEnd})`;
-            
-            // Sayğac
-            updateProgress();
             
             // Foto qalereyası - SADƏ SLIDER (nöqtələr + swipe)
             const galleryWrapper = document.getElementById('galleryWrapper');
@@ -1756,19 +1575,6 @@
             document.getElementById('contactPhone').textContent = SITE_CONFIG.contactPhone;
             document.getElementById('contactAddress').textContent = SITE_CONFIG.contactAddress;
         });
-
-        function updateProgress() {
-            const target = SITE_CONFIG.targetAmount;
-            const collected = SITE_CONFIG.collectedAmount;
-            const percentage = Math.min((collected / target) * 100, 100);
-            const remaining = Math.max(target - collected, 0);
-            
-            document.getElementById('targetAmount').textContent = '$' + target.toLocaleString();
-            document.getElementById('progressBar').style.width = percentage + '%';
-            document.getElementById('collectedAmount').textContent = '$' + collected.toLocaleString();
-            document.getElementById('remainingAmount').textContent = '$' + remaining.toLocaleString();
-            document.getElementById('progressPercent').textContent = percentage.toFixed(1) + '%';
-        }
 
         function copyToClipboard(text, button) {
             navigator.clipboard.writeText(text).then(() => {
