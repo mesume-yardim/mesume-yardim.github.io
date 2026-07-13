@@ -635,19 +635,19 @@ footer {
             Məsumə
         </a>
         <nav class="nav-links" aria-label="Əsas naviqasiya">
-            <a href="#hekaye">Hekayə</a>
-            <a href="#tibbi">Tibbi məlumat</a>
-            <a href="#sekiller">Şəkillər</a>
-            <a href="#senedler">Sənədlər</a>
+            <a href="#hekaye" data-i18n="navStory">Hekayə</a>
+            <a href="#tibbi" data-i18n="navMedical">Tibbi məlumat</a>
+            <a href="#sekiller" data-i18n="navPhotos">Şəkillər</a>
+            <a href="#senedler" data-i18n="navDocs">Sənədlər</a>
         </nav>
         <div class="nav-right">
             <div class="lang" role="group" aria-label="Dil seçimi">
-                <button class="active">AZ</button>
-                <button>TR</button>
-                <button>RU</button>
-                <button>EN</button>
+                <button class="active" data-lang="az">AZ</button>
+                <button data-lang="tr">TR</button>
+                <button data-lang="ru">RU</button>
+                <button data-lang="en">EN</button>
             </div>
-            <a href="#donation" class="btn btn-primary btn-nav">Kart nömrələri</a>
+            <a href="#donation" class="btn btn-primary btn-nav" data-i18n="navCards">Kart nömrələri</a>
         </div>
     </div>
 </header>
@@ -656,21 +656,21 @@ footer {
 <!-- ═══════ HERO ═══════ -->
 <section class="hero">
     <div class="hero-inner">
-        <h1>Məsumənin <span class="hl">ümidləri</span> pulun yoxluğuna qurban getməsin</h1>
-        <p class="hero-sub">Məsumə və Fatimə 3 yaşlı əkiz bacılardır. Fatimə sağlam inkişaf edir, Məsumə isə həkim səhlənkarlığı nəticəsində doğuşdan serebral iflicdir. Onun müalicəsi yalnız davamlı reabilitasiya seansları ilə mümkündür — sizin dəstəyiniz onun ayağa qalxması üçün ümiddir.</p>
+        <h1 data-i18n-html="heroH1">Məsumənin <span class="hl">ümidləri</span> pulun yoxluğuna qurban getməsin</h1>
+        <p class="hero-sub" data-i18n="heroSub">Məsumə və Fatimə 3 yaşlı əkiz bacılardır. Fatimə sağlam inkişaf edir, Məsumə isə həkim səhlənkarlığı nəticəsində doğuşdan serebral iflicdir. Onun müalicəsi yalnız davamlı reabilitasiya seansları ilə mümkündür — sizin dəstəyiniz onun ayağa qalxması üçün ümiddir.</p>
         <div class="hero-actions">
             <a href="#donation" class="btn btn-primary">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h.01M11 15h2M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                Kart nömrələrinə bax
+                <span data-i18n="btnSeeCards">Kart nömrələrinə bax</span>
             </a>
             <a href="#senedler" class="btn btn-white">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                Sənədlərə bax
+                <span data-i18n="btnSeeDocs">Sənədlərə bax</span>
             </a>
             <a href="#elaqe" class="btn btn-ask">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                Şübhən var? Ailədən soruş
-                <span class="ask-callout" id="askCallout" aria-hidden="true">Sualın var? Buradan soruş</span>
+                <span data-i18n="btnAsk">Şübhən var? Ailədən soruş</span>
+                <span class="ask-callout" id="askCallout" aria-hidden="true" data-i18n="askCallout">Sualın var? Buradan soruş</span>
             </a>
         </div>
         <div class="hero-photo reveal">
@@ -681,13 +681,13 @@ footer {
                 <span class="dot" aria-hidden="true">
                     <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
                 </span>
-                Hər dəstək bir ümiddir
+                <span data-i18n="float1">Hər dəstək bir ümiddir</span>
             </div>
             <div class="hero-float2">
                 <span class="dot" aria-hidden="true">
                     <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
                 </span>
-                Fatimənin əkiz bacısı
+                <span data-i18n="float2">Fatimənin əkiz bacısı</span>
             </div>
         </div>
     </div>
@@ -697,14 +697,14 @@ footer {
 <section class="section story" id="hekaye">
     <div class="container">
         <div class="section-head">
-            <span class="eyebrow">Hekayə</span>
-            <h2 class="section-title">Məsumənin hekayəsi</h2>
+            <span class="eyebrow" data-i18n="storyEyebrow">Hekayə</span>
+            <h2 class="section-title" data-i18n="storyTitle">Məsumənin hekayəsi</h2>
         </div>
         <div class="story-card reveal">
-            <p>Məsumə və Fatimə dünyaya göz açanda hər kəsin sevinci ikiqat idi — <strong>əkiz bacılar</strong>. Amma həkim səhlənkarlığı və doğuş zamanı oksigen çatışmazlığı bu sevincin yarısını acıya çevirdi. Fatimə sağlam inkişaf edir, Məsumə isə <strong>doğuşdan serebral iflicdir</strong>.</p>
-            <p>Məsumənin müalicəsi yalnız <strong>davamlı reabilitasiya seansları</strong> ilə mümkündür. 2024-cü ilin sentyabrından Bakıdakı <strong>Serebral İflic Akademiyasında</strong> müalicə alır. Seanslar dayansa, əzələləri yığılacaq, vəziyyəti ağırlaşacaq.</p>
-            <p>Ailə <strong>kirayədə yaşayır</strong>, gündəlik xərclərini güclə ödəyir. Buna baxmayaraq qızlarının müalicəsi üçün gecə-gündüz çalışırlar.</p>
-            <p>Ailənin bir arzusu var: Məsumə də bacısı Fatimə kimi ayağa qalxsın, addım atsın, həyatdan geri qalmasın. <strong>3₼, 5₼ — az deməyin.</strong> Hər qəpik bir nəfəsdir, bir ümiddir.</p>
+            <p data-i18n-html="storyP1">Məsumə və Fatimə dünyaya göz açanda hər kəsin sevinci ikiqat idi — <strong>əkiz bacılar</strong>. Amma həkim səhlənkarlığı və doğuş zamanı oksigen çatışmazlığı bu sevincin yarısını acıya çevirdi. Fatimə sağlam inkişaf edir, Məsumə isə <strong>doğuşdan serebral iflicdir</strong>.</p>
+            <p data-i18n-html="storyP2">Məsumənin müalicəsi yalnız <strong>davamlı reabilitasiya seansları</strong> ilə mümkündür. 2024-cü ilin sentyabrından Bakıdakı <strong>Serebral İflic Akademiyasında</strong> müalicə alır. Seanslar dayansa, əzələləri yığılacaq, vəziyyəti ağırlaşacaq.</p>
+            <p data-i18n-html="storyP3">Ailə <strong>kirayədə yaşayır</strong>, gündəlik xərclərini güclə ödəyir. Buna baxmayaraq qızlarının müalicəsi üçün gecə-gündüz çalışırlar.</p>
+            <p data-i18n-html="storyP4">Ailənin bir arzusu var: Məsumə də bacısı Fatimə kimi ayağa qalxsın, addım atsın, həyatdan geri qalmasın. <strong>3₼, 5₼ — az deməyin.</strong> Hər qəpik bir nəfəsdir, bir ümiddir.</p>
         </div>
     </div>
 </section>
@@ -713,33 +713,33 @@ footer {
 <section class="section" id="tibbi">
     <div class="container">
         <div class="section-head">
-            <span class="eyebrow">Tibbi məlumat</span>
-            <h2 class="section-title">Tibbi vəziyyət və əlaqə</h2>
+            <span class="eyebrow" data-i18n="medEyebrow">Tibbi məlumat</span>
+            <h2 class="section-title" data-i18n="medTitle">Tibbi vəziyyət və əlaqə</h2>
         </div>
         <div class="info-grid">
             <div class="info-card reveal">
                 <div class="info-icon rose" aria-hidden="true">
                     <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12h4l3-8 4 16 3-8h4"/></svg>
                 </div>
-                <h3>Diaqnoz</h3>
-                <p>Uşaq serebral iflici — G80.0, spastik tetraparez (TSEK göndərişi ilə təsdiqlənib). Həkim səhlənkarlığı və doğuş zamanı oksigen çatışmazlığı nəticəsində. Əkiz bacısı Fatimə sağlamdır.</p>
+                <h3 data-i18n="diagTitle">Diaqnoz</h3>
+                <p data-i18n="diagText">Uşaq serebral iflici — G80.0, spastik tetraparez (TSEK göndərişi ilə təsdiqlənib). Həkim səhlənkarlığı və doğuş zamanı oksigen çatışmazlığı nəticəsində. Əkiz bacısı Fatimə sağlamdır.</p>
             </div>
             <div class="info-card reveal">
                 <div class="info-icon violet" aria-hidden="true">
                     <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
                 </div>
-                <h3>Müalicə</h3>
-                <p>2024-cü ilin sentyabrından Bakıdakı Serebral İflic Akademiyasında (CP Academy) davamlı reabilitasiya alır. Seanslar dayansa, əzələləri yığılacaq, vəziyyəti ağırlaşacaq.</p>
+                <h3 data-i18n="treatTitle">Müalicə</h3>
+                <p data-i18n="treatText">2024-cü ilin sentyabrından Bakıdakı Serebral İflic Akademiyasında (CP Academy) davamlı reabilitasiya alır. Seanslar dayansa, əzələləri yığılacaq, vəziyyəti ağırlaşacaq.</p>
             </div>
             <div class="info-card reveal">
                 <div class="info-icon gold" aria-hidden="true">
                     <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.493a1 1 0 01-.5 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.5l4.493 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                 </div>
-                <h3>Ailə / Əlaqə</h3>
+                <h3 data-i18n="familyTitle">Ailə / Əlaqə</h3>
                 <dl class="info-rows">
-                    <div class="info-row"><dt>Ana</dt><dd><strong>Nargilə Cəfərova</strong></dd></div>
-                    <div class="info-row"><dt>Ünvan</dt><dd>Sabunçu rayonu, Bakıxanov qəsəbəsi, Yavər Əliyev küç., mənzil 306</dd></div>
-                    <div class="info-row"><dt>Telefon</dt><dd><strong>+994 50 456 15 03</strong></dd></div>
+                    <div class="info-row"><dt data-i18n="motherLabel">Ana</dt><dd><strong>Nargilə Cəfərova</strong></dd></div>
+                    <div class="info-row"><dt data-i18n="addressLabel">Ünvan</dt><dd>Sabunçu rayonu, Bakıxanov qəsəbəsi, Yavər Əliyev küç., mənzil 306</dd></div>
+                    <div class="info-row"><dt data-i18n="phoneLabel">Telefon</dt><dd><strong>+994 50 456 15 03</strong></dd></div>
                 </dl>
             </div>
         </div>
@@ -750,8 +750,8 @@ footer {
 <section class="section" id="sekiller">
     <div class="container">
         <div class="section-head">
-            <span class="eyebrow">Şəkillər</span>
-            <h2 class="section-title">Məsumənin dünyası</h2>
+            <span class="eyebrow" data-i18n="galEyebrow">Şəkillər</span>
+            <h2 class="section-title" data-i18n="galTitle">Məsumənin dünyası</h2>
         </div>
         <div class="gallery-grid">
             <div class="g-item reveal"><img src="mesume1.jpg" alt="Məsumə" loading="lazy"></div>
@@ -765,22 +765,22 @@ footer {
 <section class="section docs" id="senedler">
     <div class="container">
         <div class="section-head">
-            <span class="eyebrow">Şəffaflıq</span>
-            <h2 class="section-title">Hər söz sənədlə təsdiqlənir</h2>
-            <p class="section-sub">İnanmaq üçün sözümüzə yox, sənədlərə baxın.</p>
+            <span class="eyebrow" data-i18n="docEyebrow">Şəffaflıq</span>
+            <h2 class="section-title" data-i18n="docTitle">Hər söz sənədlə təsdiqlənir</h2>
+            <p class="section-sub" data-i18n="docSub">İnanmaq üçün sözümüzə yox, sənədlərə baxın.</p>
         </div>
         <div class="docs-grid">
             <div class="doc reveal">
                 <img src="document1.jpg" alt="TSEK göndərişi — diaqnoz G80.0" loading="lazy">
-                <div class="doc-label"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>TSEK göndərişi — G80.0 spastik tetraparez</div>
+                <div class="doc-label"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span data-i18n="docLabel1">TSEK göndərişi — G80.0 spastik tetraparez</span></div>
             </div>
             <div class="doc reveal">
                 <img src="document2.jpg" alt="Məsumənin şəxsiyyət vəsiqəsi" loading="lazy">
-                <div class="doc-label"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Şəxsiyyət vəsiqəsi — Cəfərli Məsumə</div>
+                <div class="doc-label"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span data-i18n="docLabel2">Şəxsiyyət vəsiqəsi — Cəfərli Məsumə</span></div>
             </div>
             <div class="doc reveal">
                 <img src="document3.jpg" alt="CP Academy arayışı" loading="lazy">
-                <div class="doc-label"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Serebral İflic Akademiyasının arayışı</div>
+                <div class="doc-label"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span data-i18n="docLabel3">Serebral İflic Akademiyasının arayışı</span></div>
             </div>
         </div>
     </div>
@@ -792,17 +792,17 @@ footer {
         <div class="trust-card reveal">
             <div class="trust-avatar" aria-hidden="true">NC</div>
             <div class="trust-body">
-                <h2 class="trust-title">Şübhəniz var? Birbaşa ailədən soruşun</h2>
-                <p class="trust-name">Cəfərova Nargilə — Məsumənin anası</p>
-                <p class="trust-text">Hər sualınıza özü cavab verir. İstəsəniz videozənglə Məsumənin vəziyyətinə şəxsən əmin ola bilərsiniz.</p>
+                <h2 class="trust-title" data-i18n="trustTitle">Şübhəniz var? Birbaşa ailədən soruşun</h2>
+                <p class="trust-name" data-i18n="trustName">Cəfərova Nargilə — Məsumənin anası</p>
+                <p class="trust-text" data-i18n="trustText">Hər sualınıza özü cavab verir. İstəsəniz videozənglə Məsumənin vəziyyətinə şəxsən əmin ola bilərsiniz.</p>
                 <div class="trust-actions">
                     <a href="https://wa.me/994504561503?text=Salam%2C%20M%C9%99sum%C9%99%20haqq%C4%B1nda%20sual%20verm%C9%99k%20ist%C9%99yir%C9%99m" target="_blank" rel="noopener" class="btn btn-wa">
                         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        WhatsApp-da soruş
+                        <span data-i18n="trustBtnAsk">WhatsApp-da soruş</span>
                     </a>
                     <a href="https://wa.me/994504561503?text=Salam%2C%20siz%C9%99%20z%C9%99ng%20etm%C9%99k%20ist%C9%99yir%C9%99m" target="_blank" rel="noopener" class="btn btn-white">
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.493a1 1 0 01-.5 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.5l4.493 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                        WhatsApp zəngi et
+                        <span data-i18n="trustBtnCall">WhatsApp zəngi et</span>
                     </a>
                 </div>
             </div>
@@ -814,9 +814,9 @@ footer {
 <section class="donate" id="donation">
     <div class="donate-wrap">
         <div class="section-head">
-            <span class="eyebrow">İndi kömək et</span>
-            <h2 class="section-title">Bank kartları</h2>
-            <p class="section-sub">Hər kart Cəfərova Nargilə (Məsumənin anası) adınadır. Nömrəni kopyalayıb köçürmə edə bilərsiniz.</p>
+            <span class="eyebrow" data-i18n="donEyebrow">İndi kömək et</span>
+            <h2 class="section-title" data-i18n="donTitle">Bank kartları</h2>
+            <p class="section-sub" data-i18n="donSub">Hər kart Cəfərova Nargilə (Məsumənin anası) adınadır. Nömrəni kopyalayıb köçürmə edə bilərsiniz.</p>
         </div>
         <div class="bank-grid">
             <div class="bank abb reveal">
@@ -825,9 +825,9 @@ footer {
                 <div class="bank-number">5522 0993 8178 7811</div>
                 <button class="copy-btn" data-card="5522099381787811">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                    <span>Kopyala</span>
+                    <span data-i18n="copy">Kopyala</span>
                 </button>
-                <div class="bank-holder">Cəfərova Nargilə (Anası)</div>
+                <div class="bank-holder" data-i18n="holder">Cəfərova Nargilə (Anası)</div>
             </div>
             <div class="bank kapital reveal">
                 <div class="chip" aria-hidden="true"></div>
@@ -835,9 +835,9 @@ footer {
                 <div class="bank-number">5239 1517 1662 0987</div>
                 <button class="copy-btn" data-card="5239151716620987">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                    <span>Kopyala</span>
+                    <span data-i18n="copy">Kopyala</span>
                 </button>
-                <div class="bank-holder">Cəfərova Nargilə (Anası)</div>
+                <div class="bank-holder" data-i18n="holder">Cəfərova Nargilə (Anası)</div>
             </div>
             <div class="bank leo reveal">
                 <div class="chip" aria-hidden="true"></div>
@@ -845,15 +845,15 @@ footer {
                 <div class="bank-number">5411 2498 0738 4404</div>
                 <button class="copy-btn" data-card="5411249807384404">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-                    <span>Kopyala</span>
+                    <span data-i18n="copy">Kopyala</span>
                 </button>
-                <div class="bank-holder">Cəfərova Nargilə (Anası)</div>
+                <div class="bank-holder" data-i18n="holder">Cəfərova Nargilə (Anası)</div>
             </div>
         </div>
         <div class="donate-actions">
             <a href="https://wa.me/994504561503?text=Salam%2C%20M%C9%99sum%C9%99y%C9%99%20k%C3%B6m%C9%99k%20etm%C9%99k%20ist%C9%99yir%C9%99m" target="_blank" rel="noopener" class="btn btn-wa">
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                Anaya birbaşa yaz
+                <span data-i18n="donBtnWrite">Anaya birbaşa yaz</span>
             </a>
             <a href="https://wa.me/994504561503" target="_blank" rel="noopener" class="btn btn-white">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.493a1 1 0 01-.5 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.5l4.493 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
@@ -867,22 +867,22 @@ footer {
 <section class="section share">
     <div class="container">
         <div class="section-head" style="margin-bottom: 30px;">
-            <span class="eyebrow">Paylaş</span>
-            <h2 class="section-title">Yardım paylaşımla başlayır</h2>
-            <p class="section-sub">Hər paylaşım Məsumənin sağalma şansını artırır.</p>
+            <span class="eyebrow" data-i18n="shareEyebrow">Paylaş</span>
+            <h2 class="section-title" data-i18n="shareTitle">Yardım paylaşımla başlayır</h2>
+            <p class="section-sub" data-i18n="shareSub">Hər paylaşım Məsumənin sağalma şansını artırır.</p>
         </div>
         <div class="share-btns">
-            <a href="#" id="shareWhatsApp" class="btn btn-white">WhatsApp-da paylaş</a>
-            <a href="#" id="shareFacebook" class="btn btn-white">Facebook-da paylaş</a>
-            <a href="#" id="shareCopy" class="btn btn-white">Linki kopyala</a>
+            <a href="#" id="shareWhatsApp" class="btn btn-white" data-i18n="shareWa">WhatsApp-da paylaş</a>
+            <a href="#" id="shareFacebook" class="btn btn-white" data-i18n="shareFb">Facebook-da paylaş</a>
+            <a href="#" id="shareCopy" class="btn btn-white" data-i18n="shareCopy">Linki kopyala</a>
         </div>
     </div>
 </section>
 </main>
 
 <footer>
-    <p class="footer-line">Məsumə üçün dua, dəstək, ümid.</p>
-    <p class="footer-meta">© 2026 Məsumə Cəfərli üçün toplanan dəstək · WhatsApp: +994 50 456 15 03<br>Sabunçu rayonu, Bakıxanov qəsəbəsi, Yavər Əliyev küç., mənzil 306, Bakı</p>
+    <p class="footer-line" data-i18n="footerLine">Məsumə üçün dua, dəstək, ümid.</p>
+    <p class="footer-meta" data-i18n-html="footerMeta">© 2026 Məsumə Cəfərli üçün toplanan dəstək · WhatsApp: +994 50 456 15 03<br>Sabunçu rayonu, Bakıxanov qəsəbəsi, Yavər Əliyev küç., mənzil 306, Bakı</p>
 </footer>
 
 <a href="https://wa.me/994504561503" target="_blank" rel="noopener" class="float-wa" aria-label="WhatsApp">
@@ -897,7 +897,7 @@ footer {
 </div>
 
 <div class="sticky-bar" id="stickyBar">
-    <a href="#donation" class="btn btn-primary">Kart nömrələrinə bax</a>
+    <a href="#donation" class="btn btn-primary" data-i18n="btnSeeCards">Kart nömrələrinə bax</a>
 </div>
 
 <script>
@@ -961,11 +961,12 @@ footer {
     document.querySelectorAll('.copy-btn').forEach(function(btn) {
         btn.addEventListener('click', function() {
             copyText(btn.getAttribute('data-card'), function() {
+                var sp = btn.querySelector('span');
                 btn.classList.add('copied');
-                btn.querySelector('span').textContent = 'Kopyalandı ✓';
+                sp.textContent = TR[LANG].copied;
                 setTimeout(function() {
                     btn.classList.remove('copied');
-                    btn.querySelector('span').textContent = 'Kopyala';
+                    sp.textContent = TR[LANG].copy;
                 }, 2000);
             });
         });
@@ -1007,21 +1008,160 @@ footer {
     });
 
     var pageUrl = 'https://mesume-yardim.github.io/';
-    var shareText = 'Məsumə doğuşdan serebral iflicdir, müalicəsi davamlı reabilitasiya seansları ilə mümkündür. Ona kömək edək: ' + pageUrl;
     var wa = document.getElementById('shareWhatsApp');
     var fb = document.getElementById('shareFacebook');
     var cp = document.getElementById('shareCopy');
-    if (wa) wa.href = 'https://wa.me/?text=' + encodeURIComponent(shareText);
-    if (fb) fb.href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(pageUrl);
+    if (fb) { fb.href = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(pageUrl); fb.target = '_blank'; }
     if (wa) wa.target = '_blank';
-    if (fb) fb.target = '_blank';
     if (cp) cp.addEventListener('click', function(e) {
         e.preventDefault();
         copyText(pageUrl, function() {
-            cp.textContent = 'Kopyalandı ✓';
-            setTimeout(function() { cp.textContent = 'Linki kopyala'; }, 2000);
+            cp.textContent = TR[LANG].linkCopied;
+            setTimeout(function() { cp.textContent = TR[LANG].shareCopy; }, 2000);
         });
     });
+
+    /* ═══════ ÇOXDİLLİLİK ═══════ */
+    var LANG = 'az';
+    var TR = {
+        az: {
+            navStory:'Hekayə', navMedical:'Tibbi məlumat', navPhotos:'Şəkillər', navDocs:'Sənədlər', navCards:'Kart nömrələri',
+            heroH1:'Məsumənin <span class="hl">ümidləri</span> pulun yoxluğuna qurban getməsin',
+            heroSub:'Məsumə və Fatimə 3 yaşlı əkiz bacılardır. Fatimə sağlam inkişaf edir, Məsumə isə həkim səhlənkarlığı nəticəsində doğuşdan serebral iflicdir. Onun müalicəsi yalnız davamlı reabilitasiya seansları ilə mümkündür — sizin dəstəyiniz onun ayağa qalxması üçün ümiddir.',
+            btnSeeCards:'Kart nömrələrinə bax', btnSeeDocs:'Sənədlərə bax', btnAsk:'Şübhən var? Ailədən soruş', askCallout:'Sualın var? Buradan soruş',
+            float1:'Hər dəstək bir ümiddir', float2:'Fatimənin əkiz bacısı',
+            storyEyebrow:'Hekayə', storyTitle:'Məsumənin hekayəsi',
+            storyP1:'Məsumə və Fatimə dünyaya göz açanda hər kəsin sevinci ikiqat idi — <strong>əkiz bacılar</strong>. Amma həkim səhlənkarlığı və doğuş zamanı oksigen çatışmazlığı bu sevincin yarısını acıya çevirdi. Fatimə sağlam inkişaf edir, Məsumə isə <strong>doğuşdan serebral iflicdir</strong>.',
+            storyP2:'Məsumənin müalicəsi yalnız <strong>davamlı reabilitasiya seansları</strong> ilə mümkündür. 2024-cü ilin sentyabrından Bakıdakı <strong>Serebral İflic Akademiyasında</strong> müalicə alır. Seanslar dayansa, əzələləri yığılacaq, vəziyyəti ağırlaşacaq.',
+            storyP3:'Ailə <strong>kirayədə yaşayır</strong>, gündəlik xərclərini güclə ödəyir. Buna baxmayaraq qızlarının müalicəsi üçün gecə-gündüz çalışırlar.',
+            storyP4:'Ailənin bir arzusu var: Məsumə də bacısı Fatimə kimi ayağa qalxsın, addım atsın, həyatdan geri qalmasın. <strong>3₼, 5₼ — az deməyin.</strong> Hər qəpik bir nəfəsdir, bir ümiddir.',
+            medEyebrow:'Tibbi məlumat', medTitle:'Tibbi vəziyyət və əlaqə',
+            diagTitle:'Diaqnoz', diagText:'Uşaq serebral iflici — G80.0, spastik tetraparez (TSEK göndərişi ilə təsdiqlənib). Həkim səhlənkarlığı və doğuş zamanı oksigen çatışmazlığı nəticəsində. Əkiz bacısı Fatimə sağlamdır.',
+            treatTitle:'Müalicə', treatText:'2024-cü ilin sentyabrından Bakıdakı Serebral İflic Akademiyasında (CP Academy) davamlı reabilitasiya alır. Seanslar dayansa, əzələləri yığılacaq, vəziyyəti ağırlaşacaq.',
+            familyTitle:'Ailə / Əlaqə', motherLabel:'Ana', addressLabel:'Ünvan', phoneLabel:'Telefon',
+            galEyebrow:'Şəkillər', galTitle:'Məsumənin dünyası',
+            docEyebrow:'Şəffaflıq', docTitle:'Hər söz sənədlə təsdiqlənir', docSub:'İnanmaq üçün sözümüzə yox, sənədlərə baxın.',
+            docLabel1:'TSEK göndərişi — G80.0 spastik tetraparez', docLabel2:'Şəxsiyyət vəsiqəsi — Cəfərli Məsumə', docLabel3:'Serebral İflic Akademiyasının arayışı',
+            trustTitle:'Şübhəniz var? Birbaşa ailədən soruşun', trustName:'Cəfərova Nargilə — Məsumənin anası', trustText:'Hər sualınıza özü cavab verir. İstəsəniz videozənglə Məsumənin vəziyyətinə şəxsən əmin ola bilərsiniz.',
+            trustBtnAsk:'WhatsApp-da soruş', trustBtnCall:'WhatsApp zəngi et',
+            donEyebrow:'İndi kömək et', donTitle:'Bank kartları', donSub:'Hər kart Cəfərova Nargilə (Məsumənin anası) adınadır. Nömrəni kopyalayıb köçürmə edə bilərsiniz.',
+            holder:'Cəfərova Nargilə (Anası)', copy:'Kopyala', copied:'Kopyalandı ✓', donBtnWrite:'Anaya birbaşa yaz',
+            shareEyebrow:'Paylaş', shareTitle:'Yardım paylaşımla başlayır', shareSub:'Hər paylaşım Məsumənin sağalma şansını artırır.',
+            shareWa:'WhatsApp-da paylaş', shareFb:'Facebook-da paylaş', shareCopy:'Linki kopyala', linkCopied:'Kopyalandı ✓',
+            footerLine:'Məsumə üçün dua, dəstək, ümid.', footerMeta:'© 2026 Məsumə Cəfərli üçün toplanan dəstək · WhatsApp: +994 50 456 15 03<br>Sabunçu rayonu, Bakıxanov qəsəbəsi, Yavər Əliyev küç., mənzil 306, Bakı',
+            shareMsg:'Məsumə doğuşdan serebral iflicdir, müalicəsi davamlı reabilitasiya seansları ilə mümkündür. Ona kömək edək: '
+        },
+        tr: {
+            navStory:'Hikâye', navMedical:'Tıbbi bilgi', navPhotos:'Fotoğraflar', navDocs:'Belgeler', navCards:'Kart numaraları',
+            heroH1:'Məsumə\'nin <span class="hl">umutları</span> paranın yokluğuna kurban gitmesin',
+            heroSub:'Məsumə ve Fatimə 3 yaşında ikiz kardeşler. Fatimə sağlıklı gelişiyor, Məsumə ise doktor ihmali sonucu doğuştan serebral palsi (beyin felci) hastası. Tedavisi ancak sürekli rehabilitasyon seansları ile mümkün — desteğiniz onun ayağa kalkması için bir umut.',
+            btnSeeCards:'Kart numaralarına bak', btnSeeDocs:'Belgelere bak', btnAsk:'Şüphen mi var? Aileye sor', askCallout:'Sorun mu var? Buradan sor',
+            float1:'Her destek bir umuttur', float2:'Fatimə\'nin ikiz kardeşi',
+            storyEyebrow:'Hikâye', storyTitle:'Məsumə\'nin hikâyesi',
+            storyP1:'Məsumə ve Fatimə dünyaya geldiğinde herkesin sevinci iki katıydı — <strong>ikiz kardeşler</strong>. Ama doktor ihmali ve doğum sırasındaki oksijen yetersizliği bu sevincin yarısını acıya çevirdi. Fatimə sağlıklı gelişiyor, Məsumə ise <strong>doğuştan serebral palsi hastası</strong>.',
+            storyP2:'Məsumə\'nin tedavisi ancak <strong>sürekli rehabilitasyon seansları</strong> ile mümkün. 2024 Eylül\'ünden beri Bakü\'deki <strong>Serebral Palsi Akademisi\'nde</strong> tedavi görüyor. Seanslar durursa kasları kasılacak, durumu ağırlaşacak.',
+            storyP3:'Aile <strong>kirada yaşıyor</strong>, günlük giderlerini zar zor karşılıyor. Buna rağmen kızlarının tedavisi için gece gündüz çalışıyorlar.',
+            storyP4:'Ailenin tek bir dileği var: Məsumə de kardeşi Fatimə gibi ayağa kalksın, adım atsın, hayattan geri kalmasın. <strong>3₼, 5₼ — az demeyin.</strong> Her kuruş bir nefes, bir umuttur.',
+            medEyebrow:'Tıbbi bilgi', medTitle:'Tıbbi durum ve iletişim',
+            diagTitle:'Teşhis', diagText:'Çocuk serebral palsisi — G80.0, spastik tetraparezi (TSEK sevkiyle onaylanmış). Doktor ihmali ve doğum sırasındaki oksijen yetersizliği sonucu. İkiz kardeşi Fatimə sağlıklı.',
+            treatTitle:'Tedavi', treatText:'2024 Eylül\'ünden beri Bakü\'deki Serebral Palsi Akademisi\'nde (CP Academy) sürekli rehabilitasyon görüyor. Seanslar durursa kasları kasılacak, durumu ağırlaşacak.',
+            familyTitle:'Aile / İletişim', motherLabel:'Anne', addressLabel:'Adres', phoneLabel:'Telefon',
+            galEyebrow:'Fotoğraflar', galTitle:'Məsumə\'nin dünyası',
+            docEyebrow:'Şeffaflık', docTitle:'Her söz belgeyle doğrulanır', docSub:'İnanmak için sözümüze değil, belgelere bakın.',
+            docLabel1:'TSEK sevki — G80.0 spastik tetraparezi', docLabel2:'Kimlik belgesi — Cəfərli Məsumə', docLabel3:'Serebral Palsi Akademisi belgesi',
+            trustTitle:'Şüpheniz mi var? Doğrudan aileye sorun', trustName:'Cəfərova Nargilə — Məsumə\'nin annesi', trustText:'Her sorunuza kendisi cevap verir. İsterseniz görüntülü aramayla Məsumə\'nin durumundan şahsen emin olabilirsiniz.',
+            trustBtnAsk:'WhatsApp\'tan sor', trustBtnCall:'WhatsApp\'tan ara',
+            donEyebrow:'Şimdi yardım et', donTitle:'Banka kartları', donSub:'Her kart Cəfərova Nargilə (Məsumə\'nin annesi) adınadır. Numarayı kopyalayıp havale yapabilirsiniz.',
+            holder:'Cəfərova Nargilə (Anne)', copy:'Kopyala', copied:'Kopyalandı ✓', donBtnWrite:'Anneye doğrudan yaz',
+            shareEyebrow:'Paylaş', shareTitle:'Yardım paylaşımla başlar', shareSub:'Her paylaşım Məsumə\'nin iyileşme şansını artırır.',
+            shareWa:'WhatsApp\'ta paylaş', shareFb:'Facebook\'ta paylaş', shareCopy:'Linki kopyala', linkCopied:'Kopyalandı ✓',
+            footerLine:'Məsumə için dua, destek, umut.', footerMeta:'© 2026 Məsumə Cəfərli için toplanan destek · WhatsApp: +994 50 456 15 03<br>Sabunçu ilçesi, Bakıxanov kasabası, Yavər Əliyev sok., daire 306, Bakü',
+            shareMsg:'Məsumə doğuştan serebral palsi hastası, tedavisi sürekli rehabilitasyon seanslarıyla mümkün. Ona yardım edelim: '
+        },
+        ru: {
+            navStory:'История', navMedical:'Мед. информация', navPhotos:'Фотографии', navDocs:'Документы', navCards:'Номера карт',
+            heroH1:'Пусть <span class="hl">надежды</span> Масумы не станут жертвой нехватки денег',
+            heroSub:'Масума и Фатима — трёхлетние сёстры-близнецы. Фатима развивается здоровой, а Масума из-за врачебной халатности с рождения страдает ДЦП. Её лечение возможно только при постоянных сеансах реабилитации — ваша поддержка это надежда на то, что она встанет на ноги.',
+            btnSeeCards:'Смотреть номера карт', btnSeeDocs:'Смотреть документы', btnAsk:'Есть сомнения? Спросите семью', askCallout:'Есть вопрос? Спросите здесь',
+            float1:'Каждая помощь — это надежда', float2:'Сестра-близнец Фатимы',
+            storyEyebrow:'История', storyTitle:'История Масумы',
+            storyP1:'Когда Масума и Фатима появились на свет, радость всех была двойной — <strong>сёстры-близнецы</strong>. Но врачебная халатность и нехватка кислорода при родах превратили половину этой радости в боль. Фатима развивается здоровой, а Масума <strong>с рождения страдает ДЦП</strong>.',
+            storyP2:'Лечение Масумы возможно только при <strong>постоянных сеансах реабилитации</strong>. С сентября 2024 года она проходит лечение в <strong>Академии церебрального паралича</strong> в Баку. Если сеансы прекратятся, её мышцы сведёт, а состояние ухудшится.',
+            storyP3:'Семья <strong>живёт в съёмном жилье</strong>, с трудом покрывает ежедневные расходы. Несмотря на это, они день и ночь трудятся ради лечения дочери.',
+            storyP4:'У семьи одна мечта: чтобы Масума, как и её сестра Фатима, встала на ноги, сделала шаг, не отстала от жизни. <strong>3₼, 5₼ — не говорите, что это мало.</strong> Каждая копейка — это вдох, это надежда.',
+            medEyebrow:'Мед. информация', medTitle:'Состояние здоровья и контакты',
+            diagTitle:'Диагноз', diagText:'Детский церебральный паралич — G80.0, спастический тетрапарез (подтверждён направлением ВТЭК). Вследствие врачебной халатности и нехватки кислорода при родах. Сестра-близнец Фатима здорова.',
+            treatTitle:'Лечение', treatText:'С сентября 2024 года проходит постоянную реабилитацию в Академии церебрального паралича (CP Academy) в Баку. Если сеансы прекратятся, мышцы сведёт, состояние ухудшится.',
+            familyTitle:'Семья / Контакты', motherLabel:'Мать', addressLabel:'Адрес', phoneLabel:'Телефон',
+            galEyebrow:'Фотографии', galTitle:'Мир Масумы',
+            docEyebrow:'Прозрачность', docTitle:'Каждое слово подтверждено документом', docSub:'Чтобы поверить, смотрите не на слова, а на документы.',
+            docLabel1:'Направление ВТЭК — G80.0 спастический тетрапарез', docLabel2:'Удостоверение личности — Джафарли Масума', docLabel3:'Справка Академии церебрального паралича',
+            trustTitle:'Есть сомнения? Спросите напрямую у семьи', trustName:'Джафарова Наргиля — мать Масумы', trustText:'На каждый ваш вопрос отвечает лично. При желании вы можете видеозвонком лично убедиться в состоянии Масумы.',
+            trustBtnAsk:'Спросить в WhatsApp', trustBtnCall:'Позвонить в WhatsApp',
+            donEyebrow:'Помочь сейчас', donTitle:'Банковские карты', donSub:'Все карты оформлены на имя Джафаровой Наргили (мать Масумы). Вы можете скопировать номер и сделать перевод.',
+            holder:'Джафарова Наргиля (Мать)', copy:'Копировать', copied:'Скопировано ✓', donBtnWrite:'Написать матери напрямую',
+            shareEyebrow:'Поделиться', shareTitle:'Помощь начинается с репоста', shareSub:'Каждый репост повышает шанс Масумы на выздоровление.',
+            shareWa:'Поделиться в WhatsApp', shareFb:'Поделиться в Facebook', shareCopy:'Копировать ссылку', linkCopied:'Скопировано ✓',
+            footerLine:'Масуме — молитва, поддержка, надежда.', footerMeta:'© 2026 Средства, собранные для Масумы Джафарли · WhatsApp: +994 50 456 15 03<br>Сабунчинский район, посёлок Бакиханов, ул. Явера Алиева, кв. 306, Баку',
+            shareMsg:'Масума с рождения страдает ДЦП, её лечение возможно при постоянной реабилитации. Давайте поможем ей: '
+        },
+        en: {
+            navStory:'Story', navMedical:'Medical info', navPhotos:'Photos', navDocs:'Documents', navCards:'Card numbers',
+            heroH1:'May Məsumə\'s <span class="hl">hopes</span> not fall victim to a lack of money',
+            heroSub:'Məsumə and Fatimə are 3-year-old twin sisters. Fatimə is developing healthily, while Məsumə has cerebral palsy from birth due to medical negligence. Her treatment is only possible through continuous rehabilitation sessions — your support is hope for her to stand on her own feet.',
+            btnSeeCards:'See card numbers', btnSeeDocs:'See documents', btnAsk:'Have doubts? Ask the family', askCallout:'Have a question? Ask here',
+            float1:'Every bit of support is hope', float2:'Fatimə\'s twin sister',
+            storyEyebrow:'Story', storyTitle:'Məsumə\'s story',
+            storyP1:'When Məsumə and Fatimə came into the world, everyone\'s joy was doubled — <strong>twin sisters</strong>. But medical negligence and a lack of oxygen during birth turned half of that joy into pain. Fatimə is developing healthily, while Məsumə has <strong>cerebral palsy from birth</strong>.',
+            storyP2:'Məsumə\'s treatment is only possible through <strong>continuous rehabilitation sessions</strong>. Since September 2024 she has been treated at the <strong>Cerebral Palsy Academy</strong> in Baku. If the sessions stop, her muscles will contract and her condition will worsen.',
+            storyP3:'The family <strong>lives in a rented home</strong> and barely covers daily expenses. Despite this, they work day and night for their daughter\'s treatment.',
+            storyP4:'The family has one wish: that Məsumə, like her sister Fatimə, will stand up, take a step, and not fall behind in life. <strong>3₼, 5₼ — don\'t say it\'s too little.</strong> Every penny is a breath, a hope.',
+            medEyebrow:'Medical info', medTitle:'Medical condition & contact',
+            diagTitle:'Diagnosis', diagText:'Infantile cerebral palsy — G80.0, spastic tetraparesis (confirmed by the medical board referral). Due to medical negligence and lack of oxygen during birth. Her twin sister Fatimə is healthy.',
+            treatTitle:'Treatment', treatText:'Since September 2024 she receives continuous rehabilitation at the Cerebral Palsy Academy (CP Academy) in Baku. If the sessions stop, her muscles will contract and her condition will worsen.',
+            familyTitle:'Family / Contact', motherLabel:'Mother', addressLabel:'Address', phoneLabel:'Phone',
+            galEyebrow:'Photos', galTitle:'Məsumə\'s world',
+            docEyebrow:'Transparency', docTitle:'Every word is backed by a document', docSub:'To believe, look not at our words but at the documents.',
+            docLabel1:'Medical board referral — G80.0 spastic tetraparesis', docLabel2:'ID card — Cəfərli Məsumə', docLabel3:'Cerebral Palsy Academy certificate',
+            trustTitle:'Have doubts? Ask the family directly', trustName:'Cəfərova Nargilə — Məsumə\'s mother', trustText:'She answers every question herself. If you wish, you can personally verify Məsumə\'s condition via video call.',
+            trustBtnAsk:'Ask on WhatsApp', trustBtnCall:'Call on WhatsApp',
+            donEyebrow:'Help now', donTitle:'Bank cards', donSub:'Every card is in the name of Cəfərova Nargilə (Məsumə\'s mother). You can copy the number and make a transfer.',
+            holder:'Cəfərova Nargilə (Mother)', copy:'Copy', copied:'Copied ✓', donBtnWrite:'Message the mother directly',
+            shareEyebrow:'Share', shareTitle:'Help begins with sharing', shareSub:'Every share increases Məsumə\'s chance of recovery.',
+            shareWa:'Share on WhatsApp', shareFb:'Share on Facebook', shareCopy:'Copy link', linkCopied:'Copied ✓',
+            footerLine:'For Məsumə: prayer, support, hope.', footerMeta:'© 2026 Support raised for Məsumə Cəfərli · WhatsApp: +994 50 456 15 03<br>Sabunçu district, Bakıxanov settlement, Yavər Əliyev St., apt. 306, Baku',
+            shareMsg:'Məsumə has cerebral palsy from birth; her treatment is possible through continuous rehabilitation. Let\'s help her: '
+        }
+    };
+    function applyShare(){
+        var msg = TR[LANG].shareMsg + pageUrl;
+        if (wa) wa.href = 'https://wa.me/?text=' + encodeURIComponent(msg);
+    }
+    function setLang(lang){
+        if (!TR[lang]) return;
+        LANG = lang;
+        var dict = TR[lang];
+        document.documentElement.lang = lang;
+        document.querySelectorAll('[data-i18n]').forEach(function(el){
+            var v = dict[el.getAttribute('data-i18n')];
+            if (v != null) el.textContent = v;
+        });
+        document.querySelectorAll('[data-i18n-html]').forEach(function(el){
+            var v = dict[el.getAttribute('data-i18n-html')];
+            if (v != null) el.innerHTML = v;
+        });
+        document.querySelectorAll('.lang button').forEach(function(b){
+            b.classList.toggle('active', b.getAttribute('data-lang') === lang);
+        });
+        try { localStorage.setItem('mesume_lang', lang); } catch(e){}
+        applyShare();
+    }
+    document.querySelectorAll('.lang button').forEach(function(b){
+        b.addEventListener('click', function(){ setLang(b.getAttribute('data-lang')); });
+    });
+    var saved = 'az';
+    try { saved = localStorage.getItem('mesume_lang') || 'az'; } catch(e){}
+    setLang(saved);
 })();
 </script>
 </body>
