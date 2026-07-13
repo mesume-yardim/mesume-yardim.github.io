@@ -217,6 +217,7 @@ html.anim .reveal.in { opacity: 1; transform: none; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 11px; justify-content: center; }
 .hero-actions .btn { padding: 13px 24px; font-size: 15px; }
 .hero-actions .flex-break { flex-basis: 100%; height: 0; }
+.mobile-links { display: none; }
 .btn-ask {
     background: var(--accent-soft);
     color: var(--accent-dark);
@@ -613,6 +614,15 @@ footer {
     .trust { padding: 44px 0 52px; }
     .trust-card { flex-direction: column; gap: 14px; padding: 26px 22px; }
     .nav-links, .btn-nav { display: none; }
+    .mobile-links {
+        display: flex; justify-content: center; flex-wrap: wrap;
+        gap: 6px 18px; margin-bottom: 16px;
+    }
+    .mobile-links a {
+        font-size: 12.5px; font-weight: 800; color: var(--muted);
+        text-decoration: none; letter-spacing: .2px;
+    }
+    .mobile-links a:active { color: var(--accent); }
     .lang { margin-left: auto; padding: 3px; }
     .lang button { padding: 5px 9px; font-size: 12px; }
     .sticky-bar { display: flex; }
@@ -660,6 +670,12 @@ footer {
 <!-- ═══════ HERO ═══════ -->
 <section class="hero">
     <div class="hero-inner">
+        <nav class="mobile-links" aria-label="Bölmələr">
+            <a href="#hekaye" data-i18n="navStory">Hekayə</a>
+            <a href="#tibbi" data-i18n="navMedical">Tibbi məlumat</a>
+            <a href="#sekiller" data-i18n="navPhotos">Şəkillər</a>
+            <a href="#senedler" data-i18n="navDocs">Sənədlər</a>
+        </nav>
         <h1 data-i18n-html="heroH1">Məsumənin <span class="hl">ümidləri</span> pulun yoxluğuna qurban getməsin</h1>
         <p class="hero-sub" data-i18n="heroSub">Məsumə və Fatimə 3 yaşlı əkiz bacılardır. Fatimə sağlam inkişaf edir, Məsumə isə həkim səhlənkarlığı nəticəsində doğuşdan serebral iflicdir. Onun müalicəsi yalnız davamlı reabilitasiya seansları ilə mümkündür — sizin dəstəyiniz onun ayağa qalxması üçün ümiddir.</p>
         <div class="hero-actions">
