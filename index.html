@@ -271,6 +271,44 @@ html.anim .reveal.in { opacity: 1; transform: none; }
 .g-item:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
 .g-item img { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
 
+/* ═══════ MEDICAL INFO ═══════ */
+.info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.info-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--r-card);
+    box-shadow: var(--shadow-sm);
+    padding: 30px 28px;
+    transition: transform .25s, box-shadow .25s;
+}
+.info-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+.info-icon {
+    width: 52px; height: 52px; border-radius: 16px;
+    display: grid; place-items: center;
+    margin-bottom: 22px;
+}
+.info-icon svg { width: 24px; height: 24px; }
+.info-icon.rose { background: var(--accent-soft); color: var(--accent); }
+.info-icon.violet { background: #F1EAFA; color: #8055B0; }
+.info-icon.gold { background: #FBF0DE; color: #C08A36; }
+.info-card h3 {
+    font-family: var(--serif); font-weight: 600;
+    font-size: 22px; color: var(--ink);
+    margin-bottom: 12px;
+}
+.info-card p { font-size: 15.5px; }
+.info-rows { display: grid; gap: 12px; }
+.info-row { display: grid; grid-template-columns: 76px 1fr; gap: 10px; align-items: baseline; }
+.info-row dt {
+    font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    color: var(--accent);
+}
+.info-row dd { font-size: 15px; color: var(--body); }
+.info-row dd strong { color: var(--ink); font-weight: 600; }
+@media (max-width: 960px) {
+    .info-grid { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; }
+}
+
 /* ═══════ GALLERY BG ═══════ */
 #sekiller { background: #FDF6EF; border-top: 1px solid #F3E6D8; border-bottom: 1px solid #F3E6D8; }
 
@@ -565,6 +603,43 @@ footer {
                 <p>Məsumənin müalicəsi yalnız <strong>davamlı reabilitasiya seansları</strong> ilə mümkündür. Seanslar dayansa, əzələləri yığılacaq, vəziyyəti ağırlaşacaq.</p>
                 <p>Ailə <strong>kirayədə yaşayır</strong>, gündəlik xərclərini güclə ödəyir. Buna baxmayaraq qızlarının müalicəsi üçün gecə-gündüz çalışırlar.</p>
                 <p>Ailənin bir arzusu var: Məsumə də bacısı Fatimə kimi ayağa qalxsın, addım atsın, həyatdan geri qalmasın. <strong>3₼, 5₼ — az deməyin.</strong> Hər qəpik bir nəfəsdir, bir ümiddir.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ MEDICAL INFO ═══════ -->
+<section class="section" id="tibbi">
+    <div class="container">
+        <div class="section-head">
+            <span class="eyebrow">Tibbi məlumat</span>
+            <h2 class="section-title">Tibbi vəziyyət və əlaqə</h2>
+        </div>
+        <div class="info-grid">
+            <div class="info-card reveal">
+                <div class="info-icon rose" aria-hidden="true">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+                </div>
+                <h3>Diaqnoz</h3>
+                <p>Doğuşdan serebral iflic — həkim səhlənkarlığı və doğuş zamanı oksigen çatışmazlığı nəticəsində. Əkiz bacısı Fatimə sağlam inkişaf edir.</p>
+            </div>
+            <div class="info-card reveal">
+                <div class="info-icon violet" aria-hidden="true">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                </div>
+                <h3>Müalicə</h3>
+                <p>Davamlı reabilitasiya seanslarına ehtiyacı var — seanslar dayansa, əzələləri yığılacaq, vəziyyəti ağırlaşacaq. Məqsəd: ayağa qalxması və sərbəst hərəkət etməsi.</p>
+            </div>
+            <div class="info-card reveal">
+                <div class="info-icon gold" aria-hidden="true">
+                    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.493a1 1 0 01-.5 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.5l4.493 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                </div>
+                <h3>Ailə / Əlaqə</h3>
+                <dl class="info-rows">
+                    <div class="info-row"><dt>Ana</dt><dd><strong>Nargilə Cəfərova</strong></dd></div>
+                    <div class="info-row"><dt>Ünvan</dt><dd>Sabunçu rayonu, Bakıxanov qəsəbəsi, Yavər Əliyev küç., mənzil 306</dd></div>
+                    <div class="info-row"><dt>Telefon</dt><dd><strong>+994 50 456 15 03</strong></dd></div>
+                </dl>
             </div>
         </div>
     </div>
