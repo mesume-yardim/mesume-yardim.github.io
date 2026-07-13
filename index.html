@@ -216,6 +216,7 @@ html.anim .reveal.in { opacity: 1; transform: none; }
 .hero-sub { font-size: 18px; max-width: 58ch; margin: 0 auto 30px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 11px; justify-content: center; }
 .hero-actions .btn { padding: 13px 24px; font-size: 15px; }
+.hero-actions .flex-break { flex-basis: 100%; height: 0; }
 .btn-ask {
     background: var(--accent-soft);
     color: var(--accent-dark);
@@ -593,7 +594,10 @@ footer {
     .hero-sub { font-size: 16px; line-height: 1.6; margin-bottom: 18px; }
     .badge { margin-bottom: 16px; padding: 6px 14px; font-size: 13px; }
     .hero-actions { gap: 9px; }
-    .hero-actions .btn { padding: 11px 18px; font-size: 14px; }
+    .hero-actions .btn { padding: 11px 14px; font-size: 13.5px; }
+    .hero-actions .btn-primary, .hero-actions .btn-white { flex: 1 1 0; min-width: 0; }
+    .hero-actions .btn-primary svg, .hero-actions .btn-white svg { display: none; }
+    .hero-actions .btn-ask { flex: 0 1 auto; }
     .hero-photo { max-width: 440px; margin-top: 36px; }
     .hero-photo-frame { border-radius: 24px; border-width: 6px; }
     .hero-float { left: 8px; bottom: 22px; padding: 10px 16px; font-size: 13.5px; }
@@ -667,6 +671,7 @@ footer {
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                 <span data-i18n="btnSeeDocs">Sənədlərə bax</span>
             </a>
+            <span class="flex-break" aria-hidden="true"></span>
             <a href="#elaqe" class="btn btn-ask">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 <span data-i18n="btnAsk">Şübhən var? Ailədən soruş</span>
