@@ -288,7 +288,7 @@ section[id] { scroll-margin-top: 84px; }
   font-variant-numeric: tabular-nums;
 }
 
-.hero-days.is-urgent .hero-days-num { color: #0d7f75; }
+.hero-days.is-urgent .hero-days-num { color: #c2410c; }
 
 @keyframes hero-days-in {
   from { opacity: 0; transform: scale(0.82); }
@@ -1408,7 +1408,8 @@ body.is-lightbox-open { overflow: hidden; }
   background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.18); box-shadow: none;
   top: clamp(0.9rem, 2vw, 1.5rem); right: clamp(0.9rem, 2.5vw, 1.75rem);
 }
-.hero-v2 .hero-days-num, .hero-v2 .hero-days.is-urgent .hero-days-num { color: rgba(243,246,238,0.85); }
+.hero-v2 .hero-days-num { color: rgba(238,241,255,0.85); }
+.hero-v2 .hero-days.is-urgent .hero-days-num { color: #ff8a6b; }
 
 @media (max-width: 560px) {
   .hero-v2 .hero-actions { gap: 0.55rem; }

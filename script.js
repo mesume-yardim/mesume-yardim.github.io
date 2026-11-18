@@ -61,8 +61,8 @@
     "cardsBtn": "Kartlara bax",
     "footerNote": "Bu sayt Məsuməyə dəstək üçün ailəsi tərəfindən yaradılıb.",
     "scrollDown": "",
-    "daysLeft": "",
-    "daysLeftOne": ""
+    "daysLeft": "{n} gün qalıb",
+    "daysLeftOne": "Son gün"
   },
   "tr": {
     "pageTitle": "Məsumə'ye destek",
@@ -114,8 +114,8 @@
     "cardsBtn": "Kartlara bak",
     "footerNote": "Bu site Məsumə'ye destek için ailesi tarafından oluşturuldu.",
     "scrollDown": "",
-    "daysLeft": "",
-    "daysLeftOne": ""
+    "daysLeft": "{n} gün kaldı",
+    "daysLeftOne": "Son gün"
   },
   "ru": {
     "pageTitle": "Помощь Масуме",
@@ -167,8 +167,8 @@
     "cardsBtn": "К картам",
     "footerNote": "Этот сайт создан семьёй для помощи Масуме.",
     "scrollDown": "",
-    "daysLeft": "",
-    "daysLeftOne": ""
+    "daysLeft": "Осталось дней: {n}",
+    "daysLeftOne": "Последний день"
   },
   "en": {
     "pageTitle": "Support Məsumə",
@@ -220,8 +220,8 @@
     "cardsBtn": "See cards",
     "footerNote": "This site was created by her family to support Məsumə.",
     "scrollDown": "",
-    "daysLeft": "",
-    "daysLeftOne": ""
+    "daysLeft": "{n} days left",
+    "daysLeftOne": "Last day"
   }
 };
 
